@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: init
+      author: duc.dev
+      changes:
+      - sqlFile:
+          path: /init/guland.sql
+          relativeToChangelogFile: true
