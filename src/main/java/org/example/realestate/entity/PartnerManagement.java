@@ -17,18 +17,14 @@ public class PartnerManagement extends BaseEntity<Integer>{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "account_id", nullable = false)
+    private Integer accountId;
+
     @Column(name = "partner_name", nullable = false)
     private String partnerName;
 
-    @Column(name = "email")
-    @Email(regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+(?:\\.[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$", message = "Email is invalid")
-    private String email;
-
     @Column(name = "phone", nullable = false)
     private String phone;
-
-    @Column(name = "password", nullable = false, columnDefinition = "longtext")
-    private String password;
 
     @Column(name = "description", nullable = false, columnDefinition = "longtext")
     private String description;

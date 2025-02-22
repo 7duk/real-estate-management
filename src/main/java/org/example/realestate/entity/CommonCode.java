@@ -12,7 +12,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CommonCode extends BaseEntity<Integer> {
+public class CommonCode extends BaseEntity<CommonCodeId> {
     @Column(name = "category_name",nullable = false)
     private String categoryName;
 

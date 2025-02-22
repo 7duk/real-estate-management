@@ -12,4 +12,5 @@ public class RealEstateController {
     public ResponseEntity<?> healthCheck(){
         return ResponseEntity.ok().body("Health Check OK");
     }
+
 }

@@ -15,10 +15,10 @@ public class Account extends BaseEntity<Integer>{
     @Column(name = "username", nullable = false, length = 50)
     private String username;
 
-    @Column(name = "password", nullable = false, columnDefinition = "longtext")
+    @Column(name = "password", nullable = false )
     private String password;
 
-    @Column(name = "refresh_token", nullable = false, columnDefinition = "longtext")
+    @Column(name = "refresh_token", columnDefinition = "longtext")
     private String refreshToken;
 
     @Column(name = "email", nullable = false, length = 50)
@@ -27,5 +27,5 @@ public class Account extends BaseEntity<Integer>{
 
     @Enumerated(EnumType.STRING)
     @Column(name = "role",nullable = false)
-    private EnumType role;
+    private Role role;
 }

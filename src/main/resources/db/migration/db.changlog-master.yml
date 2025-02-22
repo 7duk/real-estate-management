@@ -4,5 +4,12 @@ databaseChangeLog:
       author: duc.dev
       changes:
       - sqlFile:
-          path: /init/guland.sql
+          path: /init/real_estate_management-2025_02_20_00_17_45-dump.sql
           relativeToChangelogFile: true
+  - changeSet:
+        id: add_data
+        author: duc.dev
+        changes:
+            - sqlFile:
+                  path: /init/add_data2025_02_19-dump.sql
+                  relativeToChangelogFile: true
