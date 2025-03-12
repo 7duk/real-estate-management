@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RealEstateCatalogRepository extends JpaRepository<RealEstateCatalog, Integer> {
+public interface RealEstateCatalogRepository extends RepositoryInterface<RealEstateCatalog, Integer> {
 }

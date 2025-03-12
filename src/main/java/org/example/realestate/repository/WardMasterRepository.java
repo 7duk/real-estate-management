@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface WardMasterRepository extends JpaRepository<WardMaster, Integer> {
+public interface WardMasterRepository extends RepositoryInterface<WardMaster, Integer> {
 }

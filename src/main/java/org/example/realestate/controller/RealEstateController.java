@@ -1,5 +1,6 @@
 package org.example.realestate.controller;
 
+import org.example.realestate.dto.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class RealEstateController {
     @GetMapping("/health-check")
     public ResponseEntity<?> healthCheck(){
-        return ResponseEntity.ok().body("Health Check OK");
+        return ResponseEntity.ok().body(Response.builder().code(200).message("Health Check OK").build());
     }
 
 }

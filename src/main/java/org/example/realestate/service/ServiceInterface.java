@@ -2,9 +2,9 @@ package org.example.realestate.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Component;
 
-public interface BaseService<T> {
-    Page<T> getWithPagination(Pageable pageable);
-    T save(T t);
-    boolean delete(T t);
+@Component
+public interface ServiceInterface {
+
 }

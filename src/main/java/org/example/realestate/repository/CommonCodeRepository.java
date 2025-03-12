@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface CommonCodeRepository extends JpaRepository<CommonCode, CommonCodeId> {
+public interface CommonCodeRepository extends RepositoryInterface<CommonCode, CommonCodeId> {
     List<CommonCode> findByCategoryNameAndInnerName(String categoryName, String innerName);
 
     List<CommonCode> findByCategoryName(String categoryName);
