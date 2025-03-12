@@ -7,12 +7,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.realestate.repository.RepositoryInterface;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-<<<<<<<< HEAD:src/main/java/org/example/realestate/service/ServiceInterface.java
-import org.springframework.stereotype.Component;
-
-@Component
-public interface ServiceInterface {
-========
 import org.springframework.transaction.annotation.Transactional;
 
 @RequiredArgsConstructor
@@ -48,6 +42,4 @@ public abstract class BaseService<T, ID> {
             return false;
         }
     }
->>>>>>>> 31a04f5 (update resource):src/main/java/org/example/realestate/service/BaseService.java
-
 }
