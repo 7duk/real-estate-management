@@ -7,13 +7,12 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.SoftDelete;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import java.io.Serializable;
-import java.security.Timestamp;
+import java.sql.Timestamp;
 
 @MappedSuperclass
 @Getter
 @Setter
-public abstract class BaseEntity<T extends Serializable> {
+public abstract class BaseEntity<T> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private T id;

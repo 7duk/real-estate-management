@@ -4,14 +4,18 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 @Entity
 @Table(name = "account")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Account extends BaseEntity<Integer>{
+@Getter
+public class Account extends BaseEntity<Integer>  {
     @Column(name = "username", nullable = false, length = 50)
     private String username;
 
@@ -28,4 +32,5 @@ public class Account extends BaseEntity<Integer>{
     @Enumerated(EnumType.STRING)
     @Column(name = "role",nullable = false)
     private Role role;
+
 }

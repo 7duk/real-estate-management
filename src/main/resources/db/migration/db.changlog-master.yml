@@ -13,3 +13,10 @@ databaseChangeLog:
             - sqlFile:
                   path: /init/add_data2025_02_19-dump.sql
                   relativeToChangelogFile: true
+  - changeSet:
+      id: update_pwd
+      author: duc.dev
+      changes:
+        - sqlFile:
+            path: /init/update-password.sql
+            relativeToChangelogFile: true
